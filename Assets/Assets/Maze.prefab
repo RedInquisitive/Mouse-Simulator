@@ -45,6 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mazeCell: {fileID: 7608638696768191314, guid: c485e169ed5953f4fbe3e57e6e75e74d,
     type: 3}
-  sizeX: 10
-  sizeZ: 10
+  size: {x: 10, y: 10}
   delayTime: 0.1
