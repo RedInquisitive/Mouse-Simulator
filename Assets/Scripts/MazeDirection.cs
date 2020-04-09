@@ -1,6 +1,3 @@
-﻿public enum MazeDirection {
-	North,
-	South,
-	East,
-	West
+﻿public static class MazeDirection {
+
 }
