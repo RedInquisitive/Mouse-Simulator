@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4796248535684091545
+--- !u!1 &3069101364390583049
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1765913595827705881}
-  - component: {fileID: 1797636540224581033}
+  - component: {fileID: 8785098393341565466}
+  - component: {fileID: 2989265318684418277}
   m_Layer: 0
-  m_Name: Maze
+  m_Name: Maze Passage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1765913595827705881
+--- !u!4 &8785098393341565466
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4796248535684091545}
+  m_GameObject: {fileID: 3069101364390583049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,22 +31,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1797636540224581033
+--- !u!114 &2989265318684418277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4796248535684091545}
+  m_GameObject: {fileID: 3069101364390583049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a467bb314eae2f4a9594bf129c4325a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2aa92acc7f1a87040832004e1146e0af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mazeCell: {fileID: -2916772746400192696, guid: c485e169ed5953f4fbe3e57e6e75e74d,
-    type: 3}
-  mazeWall: {fileID: 370542784960140120, guid: 76a714ad23decf44a916e06747717ed1, type: 3}
-  mazePassage: {fileID: 2989265318684418277, guid: 7c8ff904d2ae1df41b455e771d123e68,
-    type: 3}
-  size: {x: 10, y: 10}
-  delayTime: 0.01
