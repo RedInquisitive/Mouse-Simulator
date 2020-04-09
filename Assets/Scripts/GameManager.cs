@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public Maze maze;
+	private Maze instance;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Start() {
+		BeginGame();
+	}
+
+	private void Update() {
+		if (Input.GetKeyDown(KeyCode.Space)) {
+			RestartGame();
+		}
+	}
+
+	private void BeginGame() {
+		instance = Instantiate(maze) as Maze;
+		StartCoroutine(instance.Generate());
+	}
+
+	private void RestartGame() {
+		StopAllCoroutines();
+		Destroy(instance.gameObject);
+		BeginGame();
+	}
 }
